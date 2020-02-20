@@ -1,2 +1,2 @@
-# sgre_app
+# Sgre App
 SGRE Application Phone 
