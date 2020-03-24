@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">SGRE Laboratory</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="logoin">Logoin</string>
+    <string name="todo">TODO</string>
+    <string name="forget"><u>Forget password?</u></string>
+    <string name="signup_lab"><b><u>sign up</u></b></string>
+    <string name="signin_lab"><b><u>sign in</u></b></string>
+    <string name="forget_dialog"><b>Put your E-mail and receive your Password / or contact: ____@gmail.com / 04______</b></string>
+    <string name="logo_text">Republic algerien democratique populaire ministry of higher education and scientific research, smart grids and renewable energies.</string>
+    <string name="catigo_line">Categories</string>
+    <string name="acc_email">example@gmail.com</string>
+    <string name="fullName">Full Name</string>
+    <!-- validation Errors -->
+    <string name="err_name">The name field is required.</string>
+    <string name="err_email">The email must be a valid email address.</string>
+    <string name="err_password">The password must be at least 6 characters.</string>
+</resources>

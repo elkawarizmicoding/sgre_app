@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardCategory"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#0000"
+    app:cardUseCompatPadding="true">
+
+    <TextView
+        android:id="@+id/idCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/imageCategory"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            app:siRadius="5dp"
+            app:siBorderWidth="2dp"
+            app:siBorderColor="#ccc"
+            android:src="@drawable/sgre_png_white_text"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/nameCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom"
+            android:layout_below="@+id/imageCategory"
+            android:layout_marginTop="1dp"
+            android:autoSizeTextType="uniform"
+            android:layout_marginBottom="1dp"
+            android:text="Condensateurs"
+            android:autoSizeMinTextSize="8sp"
+            android:autoSizeMaxTextSize="15sp"
+            android:textColor="#ccc"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

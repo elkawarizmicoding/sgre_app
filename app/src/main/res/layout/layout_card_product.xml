@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutCardProductInfo"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/buttom_card_product">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product View"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ccc"
+        android:textAlignment="center"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="#444444"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/cardIdProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/cardImageProduct"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/pile1"
+            app:siRadius="10dp"
+            />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/cardNameProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arduino mega 2560"
+                android:textSize="19dp"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toTopOf="@+id/cardCategoryName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                />
+
+            <TextView
+                android:id="@+id/cardCategoryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arduino mega 2560"
+                android:textSize="13dp"
+                android:textColor="#a0a0a0"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="2dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardQuantityProduct"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.666"
+                />
+
+            <TextView
+                android:id="@+id/cardQuantityProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="QT: 50"
+                android:textColor="@color/colorObject"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.666" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/cardScrollView">
+
+            <TextView
+                android:id="@+id/cardDescriptionProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#D1D1D1"
+                android:textSize="15dp"
+                android:text="Lorem ipsum dolor sit amet, ad vim nulla persius laoreet, movet nonumy appareat sed et. Sed id equidem verterem, est ignota lucilius cu. Ut vel legendos definiebas.Minim percipit pri id. Everti diceret expetenda mei ex."/>
+
+        </ScrollView>
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to cart"
+            android:textColor="#fff"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/cardScrollView"
+            android:background="@drawable/round_btn_cart"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

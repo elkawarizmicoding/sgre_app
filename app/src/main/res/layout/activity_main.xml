@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/sgre_png" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/loadingData"
+            android:layout_below="@id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/setProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateTint="#ccc"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_below="@+id/setProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#a0a0a0"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp"
+                android:text="Wait for gating data ..." />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/inValidInternet"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2">
+
+            <ImageView
+                android:id="@+id/iconValidInternet"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_perm_scan_wifi_black_24dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_below="@+id/iconValidInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FC4D2F"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp"
+                android:text="Please check your internet" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
