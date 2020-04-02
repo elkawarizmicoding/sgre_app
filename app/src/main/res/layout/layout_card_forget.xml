@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutCardForget"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/buttom_card_product">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forget_password"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextDark"
+        android:textAlignment="center"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorTextDark"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textForget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_text"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextDark"
+            android:textSize="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@+id/textForget"
+            android:id="@+id/inEmailForget"
+            android:hint="@string/email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColorHint="@color/colorHintDark">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
+                android:drawableEnd="@drawable/email_icon"
+                android:drawableRight="@drawable/email_icon"
+                android:textColor="@color/colorTextDark"
+                android:textSize="18dp"
+                android:backgroundTint="@color/colorHintDark"
+                android:imeOptions="actionNext"
+                android:paddingBottom="10dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/janna_lt_regular"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/submitEmail"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/sent"
+            android:textColor="#fff"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/inEmailForget"
+            android:background="@drawable/round_btn_cart"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

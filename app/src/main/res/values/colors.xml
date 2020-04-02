@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#090e14</color>
-    <color name="colorPrimaryDark">#090e14</color>
-    <color name="colorAccent">#6D6D6D</color>
-    <color name="colorBtnTr">#001B6000</color>
-    <color name="colorBackLog">#585e6c</color>
-    <color name="signup_btn">#090e14</color>
-    <color name="hint_color">#cccc</color>
-    <color name="forget">#cccc</color>
-    <color name="checkBox">#cccc</color>
-    <color name="darkModeBackground">#0b0d12</color>
-    <color name="colorObject">#17ce66</color>
+    <color name="colorPrimary">#121212</color>
+    <color name="colorPrimaryDark">#121212</color><!-- #1F1B24 -->
+    <color name="colorDarkMode">#1F1B24</color>
+    <color name="colorAccent">#fff</color>
+    <color name="colorSecondary">#F2121212</color>
+    <color name="colorTextDark">#fff</color>
+    <color name="colorTextDarkF">#B6B6B6</color>
+    <color name="colorHintDark">#ccc</color>
+    <color name="colorBtnDark">#BB86FC</color>
+    <color name="colorErrorDark">#CF6679</color>
+    <color name="colorObject">#BB86FC</color>
+    <color name="colorLoadDataDark">#3C3C3C</color>
+    <color name="colorSetAction">#5C5C5C</color>
+    <color name="textInputErrorColor">#CF6679</color>
+    <color name="colorTransparent">#80121212</color>
+    <color name="cTransparent">#00000000</color>
+    <color name="colorBackTransparent">#CC000000</color>
+
+    <!-- Color Light -->
+
+    <color name="colorTextLite">#121212</color>
+
 </resources>

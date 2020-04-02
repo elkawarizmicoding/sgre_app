@@ -36,7 +36,6 @@
             android:id="@+id/cardImageProduct"
             android:layout_width="90dp"
             android:layout_height="90dp"
-            android:src="@drawable/pile1"
             app:siRadius="10dp"
             />
         <androidx.constraintlayout.widget.ConstraintLayout

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/itemDashboard" android:title="Dashboard" android:icon="@drawable/dashboard_icon"/>
+    <item android:id="@+id/itemProfile" android:title="Edit Profile" android:icon="@drawable/person_icon"/>
+    <item android:id="@+id/itemOrders" android:title="List Project" android:icon="@drawable/dashboard_icon"/>
+    <item
+        android:title="Mode Dark"
+        android:icon="@drawable/brightness_icon"
+        app:actionLayout="@layout/switch_button"/>
+</menu>

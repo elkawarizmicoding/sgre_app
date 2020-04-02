@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cTransparent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/topError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"/>
+
+        <RelativeLayout
+            android:layout_below="@id/topError"
+            android:id="@+id/paneError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/error_back"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/errorTitle"
+                android:text="Login Invalid"
+                android:textColor="@color/colorErrorDark"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp"/>
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/errorTitle"
+                android:id="@+id/errorMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextDark"
+                android:textSize="14dp"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="1. Login Invalid\n2. Password"/>
+            <Button
+                android:layout_below="@id/errorMessage"
+                android:id="@+id/btnTryAgain"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:background="@drawable/round_btn_cart"
+                android:text="try again"
+                android:textColor="@color/colorTextDark"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/error_icon"
+            app:civ_border="false"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

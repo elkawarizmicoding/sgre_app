@@ -26,7 +26,6 @@
             app:siRadius="5dp"
             app:siBorderWidth="2dp"
             app:siBorderColor="#ccc"
-            android:src="@drawable/sgre_png_white_text"
             android:layout_centerHorizontal="true"/>
         <TextView
             android:id="@+id/nameCategory"
